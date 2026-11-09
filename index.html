@@ -128,14 +128,26 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
   width:100%;height:290px;min-height:0;max-height:290px;overflow:hidden;
   background:#18221c;
 }
+.education-reworked .edu-pizza .pizza-photo{
+  display:flex;align-items:center;justify-content:center;padding:12px;
+}
 .education-reworked .edu-pizza .pizza-photo img{
   width:100%;height:100%;min-height:0;max-height:100%;display:block;
-  object-fit:cover;object-position:center 48%;
+  object-fit:contain;object-position:center center;
 }
+.education-reworked .edu-barista .training-video{position:relative}
 .education-reworked .edu-barista .latte-video{
   width:100%;height:100%;object-fit:contain;object-position:center center;
   opacity:.85;filter:saturate(.9);transform:none;
 }
+.education-reworked .edu-barista .training-video::before,
+.education-reworked .edu-barista .training-video::after{
+  content:"";position:absolute;top:0;bottom:0;width:10px;background:#18221c;z-index:2;pointer-events:none;
+}
+.education-reworked .edu-barista .training-video::before{left:0}
+.education-reworked .edu-barista .training-video::after{right:0}
+.education-reworked .edu-barista .video-caption,
+.education-reworked .edu-barista .video-tint{z-index:1}
 .education-reworked .edu-barista .training-video.is-playing .latte-video,
 .education-reworked .edu-barista .training-video:hover .latte-video{opacity:.95;transform:none}
 .education-reworked .edu-barista .video-tint{
@@ -146,6 +158,7 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
   .education-reworked .edu-barista{grid-template-columns:minmax(0,1fr);height:auto;min-height:0}
   .education-reworked .edu-pizza .pizza-photo,
   .education-reworked .edu-barista .training-video{height:270px;min-height:0;max-height:270px;border-left:0;border-top:1px solid var(--line)}
+  .education-reworked .edu-pizza .pizza-photo{padding:10px}
 }
 
 </style>
