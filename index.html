@@ -114,6 +114,40 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
 .visual-disclosure{display:block;margin-top:12px;color:var(--muted);font-size:.68rem;letter-spacing:.02em}
 @media(max-width:760px){.education-reworked .edu-pizza{grid-column:auto;grid-template-columns:1fr}.pizza-photo{height:190px;min-height:190px;border-left:0;border-top:1px solid var(--line)}.pizza-photo img{height:190px;min-height:190px;object-fit:cover}.edu-barista .training-video{height:190px;min-height:190px}}
 
+
+/* 2026-11-09: balanced pizza and barista media */
+.education-reworked .edu-pizza,
+.education-reworked .edu-barista{
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  height:290px;min-height:0;align-items:stretch;
+}
+.education-reworked .edu-pizza .edu-pizza-copy,
+.education-reworked .edu-barista .edu-barista-copy{min-width:0;padding:24px 28px;align-self:center}
+.education-reworked .edu-pizza .pizza-photo,
+.education-reworked .edu-barista .training-video{
+  width:100%;height:290px;min-height:0;max-height:290px;overflow:hidden;
+  background:#18221c;
+}
+.education-reworked .edu-pizza .pizza-photo img{
+  width:100%;height:100%;min-height:0;max-height:100%;display:block;
+  object-fit:cover;object-position:center 48%;
+}
+.education-reworked .edu-barista .latte-video{
+  width:100%;height:100%;object-fit:contain;object-position:center center;
+  opacity:.85;filter:saturate(.9);transform:none;
+}
+.education-reworked .edu-barista .training-video.is-playing .latte-video,
+.education-reworked .edu-barista .training-video:hover .latte-video{opacity:.95;transform:none}
+.education-reworked .edu-barista .video-tint{
+  background:linear-gradient(0deg,rgba(16,23,19,.74),transparent 38%);
+}
+@media(max-width:760px){
+  .education-reworked .edu-pizza,
+  .education-reworked .edu-barista{grid-template-columns:minmax(0,1fr);height:auto;min-height:0}
+  .education-reworked .edu-pizza .pizza-photo,
+  .education-reworked .edu-barista .training-video{height:270px;min-height:0;max-height:270px;border-left:0;border-top:1px solid var(--line)}
+}
+
 </style>
 </head>
 <body>
@@ -131,7 +165,7 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
 <div class="actions"><a class="btn primary" href="#about">Explore my journey ↘</a><a class="btn secondary" href="#contact">Get in touch ↗</a></div>
 </div>
 <div class="portrait-wrap" id="portrait">
-<div class="portrait-frame"><img src="faysal-portrait.png" alt="Portrait of MD Faysal"></div>
+<div class="portrait-frame"><img src="faysal-portrait.jpg" alt="Portrait of MD Faysal"></div>
 <div class="photo-note">A little about me · Nicosia, Cyprus</div>
 </div>
 <div class="hero-meta"><span>Portfolio · 2026</span><span>Based in Cyprus</span><span>Scroll to explore ↓</span></div>
@@ -190,7 +224,7 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
 <article class="edu edu-barista">
   <div class="edu-barista-copy"><div class="date">Professional training · Beacon Academy</div><h3>Barista & Mocktail Training</h3><p>Espresso extraction, milk steaming, latte art, hot and cold beverages, mocktail preparation and café equipment care.</p><div class="training-tags"><span>Espresso</span><span>Milk steaming</span><span>Latte art</span></div></div>
   <div class="training-video" data-video-card>
-    <video class="latte-video" muted loop playsinline preload="none" poster="latte-art-poster.jpg" aria-label="MD Faysal creating latte art"><source src="latte-art.mp4" type="video/mp4"></video>
+    <video class="latte-video" muted loop playsinline preload="none" aria-label="MD Faysal creating latte art"><source src="latte-art.mp4" type="video/mp4"></video>
     <div class="video-tint"></div><div class="video-caption"><span class="video-kicker">PRACTICAL SKILL</span><strong>Latte art</strong><small>Barista training in practice</small></div>
   </div>
 </article>
