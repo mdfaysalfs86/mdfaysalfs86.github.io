@@ -6,12 +6,14 @@
 <meta name="theme-color" content="#101713">
 <meta name="description" content="MD Faysal — hospitality and tourism management student and hospitality professional in Cyprus.">
 <title>MD Faysal | Hospitality & Tourism</title>
+<link rel="preload" as="image" href="faysal-portrait.jpg" fetchpriority="high">
+<script>document.documentElement.classList.add("js-image-reveal");</script>
 <style>
 :root{--bg:#101713;--panel:#18221c;--ink:#f1f3ed;--muted:#aeb9af;--accent:#c7f36b;--line:#354238;--serif:Georgia,'Times New Roman',serif;--sans:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;--mx:0px;--my:0px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 var(--sans);overflow-x:hidden}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
 header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:5}.brand{font-size:.86rem;letter-spacing:.17em;font-weight:800}.brand span{color:var(--accent);font-weight:400}.nav{display:flex;gap:26px;align-items:center;font-size:.78rem;color:var(--muted)}.nav a:hover{color:var(--accent)}.nav .contact{border:1px solid var(--accent);padding:8px 14px;color:var(--accent)}
 .hero{min-height:calc(100svh - 78px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(30px,6vw,85px);padding:70px 0 85px;position:relative}.hero:before{content:"";position:absolute;inset:8% -10% 8% 40%;background:url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1400&q=80') center/cover;opacity:.045;filter:grayscale(1);pointer-events:none;mask-image:linear-gradient(90deg,transparent,black 35%,black);}.eyebrow{font-size:.7rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent);font-weight:700;display:flex;align-items:center;gap:11px}.eyebrow:before{content:"";width:26px;height:1px;background:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font:clamp(3.5rem,7.7vw,7rem)/.92 var(--serif);letter-spacing:-.065em;font-weight:400;margin:24px 0 25px}h1 em{font-style:italic;color:var(--accent)}.intro{font-size:1.03rem;max-width:550px;color:#bdc6bd}.intro strong{color:var(--ink);font-weight:600}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:16px;padding:12px 17px;border:1px solid var(--accent);font-size:.78rem;transition:transform .25s,background .25s}.btn.primary{background:var(--accent);color:#172016}.btn:hover{transform:translateY(-3px)}.btn.secondary{color:var(--accent)}
-.portrait-wrap{position:relative;justify-self:end;width:min(100%,430px);transform:translate(var(--mx),var(--my));transition:transform .25s ease-out}.portrait-frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:#27332b;border-radius:3px}.portrait-frame:before{content:"";position:absolute;inset:0;border:1px solid rgba(199,243,107,.55);transform:translate(14px,14px);z-index:2;pointer-events:none}.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.78);display:block}.photo-note{position:absolute;bottom:-30px;left:0;color:var(--muted);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}.hero-meta{position:absolute;bottom:28px;left:0;right:0;display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:13px;color:var(--muted);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}
+.portrait-wrap{position:relative;justify-self:end;width:min(100%,430px);transform:translate(var(--mx),var(--my));transition:transform .25s ease-out}.portrait-frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:#27332b;border-radius:3px}.portrait-frame:before{content:"";position:absolute;inset:0;border:1px solid rgba(199,243,107,.55);transform:translate(14px,14px);z-index:2;pointer-events:none}.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.78);display:block}.hero-meta{position:absolute;bottom:28px;left:0;right:0;display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:13px;color:var(--muted);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}
 section{padding:100px 0;border-top:1px solid var(--line);position:relative}.section-head{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;margin-bottom:48px}.section-number{font-size:.7rem;letter-spacing:.18em;color:var(--accent)}h2{font:clamp(2.2rem,4.3vw,4rem)/1.05 var(--serif);font-weight:400;letter-spacing:-.045em;margin:10px 0 0}.section-lead{max-width:640px;color:var(--muted);font-size:1rem}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}.about-grid p{color:var(--muted)}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{border:1px solid var(--line);padding:18px}.fact small{display:block;color:var(--accent);font-size:.65rem;letter-spacing:.13em;text-transform:uppercase}.fact strong{display:block;margin-top:6px;font-size:.9rem;font-weight:500}
 .timeline{display:grid;grid-template-columns:1fr 1fr;gap:14px}.item{background:var(--panel);padding:25px;border:1px solid var(--line);min-height:185px}.item .date{color:var(--accent);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}.item h3{font-size:1.15rem;margin:9px 0 3px;font-weight:600}.item .place{color:var(--muted);font-size:.82rem}.item p{color:var(--muted);font-size:.9rem;margin:15px 0 0}
 .education{display:grid;grid-template-columns:1fr 1fr;gap:14px}.edu{padding:22px 24px;border:1px solid var(--line)}.edu h3{font-size:1rem;margin:8px 0}.edu p{font-size:.86rem;color:var(--muted);margin:0}.edu .date{font-size:.7rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
@@ -168,6 +170,11 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
   .education-reworked .edu-pizza .pizza-photo{padding:10px}
 }
 
+
+/* Show a consistent dark frame until the high-priority hero image is decoded. */
+html.js-image-reveal .portrait-frame img{opacity:0;transition:opacity .36s ease}
+html.js-image-reveal .portrait-frame img.is-loaded{opacity:1}
+@media(prefers-reduced-motion:reduce){html.js-image-reveal .portrait-frame img{transition:none}}
 </style>
 </head>
 <body>
@@ -185,8 +192,7 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
 <div class="actions"><a class="btn primary" href="#about">Explore my journey ↘</a><a class="btn secondary" href="#contact">Get in touch ↗</a></div>
 </div>
 <div class="portrait-wrap" id="portrait">
-<div class="portrait-frame"><img src="faysal-portrait.jpg" alt="Portrait of MD Faysal"></div>
-<div class="photo-note">A little about me · Nicosia, Cyprus</div>
+<div class="portrait-frame"><img src="faysal-portrait.jpg" alt="Portrait of MD Faysal" loading="eager" decoding="async" fetchpriority="high"></div>
 </div>
 <div class="hero-meta"><span>Portfolio · 2026</span><span>Based in Cyprus</span><span>Scroll to explore ↓</span></div>
 </section>
@@ -198,13 +204,13 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
 <div class="section-head"><div><div class="section-number">02 / EXPERIENCE</div><h2>Learning by doing.</h2></div><p class="section-lead">Practical roles that introduced me to restaurant operations, food preparation, service standards, and teamwork.</p></div>
 <div class="timeline">
 <article class="item">
-<div class="item-photo"><img src="sek-grill.jpg" alt="MD Faysal preparing grilled food during restaurant service at SEK Paralimni"></div>
+<div class="item-photo"><img src="sek-grill.jpg" loading="lazy" decoding="async" alt="MD Faysal preparing grilled food during restaurant service at SEK Paralimni"></div>
 <div class="date">11 June – 13 September 2026</div><h3>Grill Chef</h3><div class="place">SEK Paralimni · Cyprus</div>
 <p>Prepared and grilled meats including souvlaki, sheftalia, pork chops and chicken; assembled skewers, operated fryers, plated meals, prepared salads, and maintained kitchen hygiene during service.</p>
 <span class="tag">Food preparation · Grill operations</span>
 </article>
 <article class="item kfc-item">
-<div class="item-photo"><img src="kfc-experience-ai.png" alt="AI-generated illustrative recreation of MD Faysal in his KFC uniform"></div>
+<div class="item-photo"><img src="kfc-experience-ai.png" loading="lazy" decoding="async" alt="AI-generated illustrative recreation of MD Faysal in his KFC uniform"></div>
 <div class="date">March – June 2017</div><h3>Dishwasher & Waiter Support</h3><div class="place">KFC Bangladesh · Dhaka</div>
 <p>Maintained dishwashing and hygiene standards, supported waiters during busy periods, helped serve food when needed, and assisted kitchen and front-of-house operations.</p>
 <span class="tag">Kitchen support · Restaurant service</span>
@@ -216,7 +222,7 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
 <section id="community" class="reveal">
 <div class="section-head"><div><div class="section-number">03 / COMMUNITY</div><h2>Taking part beyond work.</h2></div><p class="section-lead">Volunteer involvement with BD Clean in Dhaka North, supporting cleaner public spaces and community awareness about littering.</p></div>
 <div class="community-intro">
-<div class="community-feature"><img src="bdclean-main.jpg" alt="MD Faysal taking part in a BD Clean street-cleaning activity"></div>
+<div class="community-feature"><img src="bdclean-main.jpg" loading="lazy" decoding="async" alt="MD Faysal taking part in a BD Clean street-cleaning activity"></div>
 <div class="community-copy">
 <div class="date">2018 – 2020 · Volunteer</div>
 <h3>IT Coordinator & Environmental Volunteer</h3>
@@ -239,7 +245,7 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative}.sect
 <article class="edu"><div class="date">2017 – 2022</div><h3>Diploma in Automotive Engineering</h3><p>Dhaka Polytechnic Institute · Bangladesh</p></article>
 <article class="edu edu-pizza">
   <div class="edu-pizza-copy"><div class="date">Professional training · Beacon Academy</div><h3>Master in Pizza</h3><p>Neapolitan dough preparation, fermentation, sauce preparation, topping arrangement, pizza oven operation and kitchen hygiene.</p><div class="training-tags"><span>Dough preparation</span><span>Pizza oven</span><span>Kitchen hygiene</span></div></div>
-  <div class="pizza-photo"><img src="pizza-training.jpg" alt="MD Faysal during practical pizza training at Beacon Academy"></div>
+  <div class="pizza-photo"><img src="pizza-training.jpg" loading="lazy" decoding="async" alt="MD Faysal during practical pizza training at Beacon Academy"></div>
 </article>
 <article class="edu edu-barista">
   <div class="edu-barista-copy"><div class="date">Professional training · Beacon Academy</div><h3>Barista & Mocktail Training</h3><p>Espresso extraction, milk steaming, latte art, hot and cold beverages, mocktail preparation and café equipment care.</p><div class="training-tags"><span>Espresso</span><span>Milk steaming</span><span>Latte art</span></div></div>
@@ -301,6 +307,19 @@ if(videoCard&&latteVideo&&!reduceMotion){
     else{latteVideo.pause();videoCard.classList.remove('is-playing');}
   }),{threshold:.35});
   videoObserver.observe(videoCard);
+}
+
+// Reveal the portrait only once its pixels are fully decoded, avoiding a partial-image flash.
+const heroPortrait=document.querySelector('.portrait-frame img');
+if(heroPortrait){
+  const showPortrait=()=>heroPortrait.classList.add('is-loaded');
+  if(typeof heroPortrait.decode==='function'){
+    heroPortrait.decode().then(showPortrait).catch(()=>{
+      if(heroPortrait.complete&&heroPortrait.naturalWidth)showPortrait();
+      else heroPortrait.addEventListener('load',showPortrait,{once:true});
+    });
+  }else if(heroPortrait.complete&&heroPortrait.naturalWidth){showPortrait();}
+  else{heroPortrait.addEventListener('load',showPortrait,{once:true});}
 }
 const portrait=document.getElementById('portrait');
 if(matchMedia('(pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
